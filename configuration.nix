@@ -54,12 +54,11 @@
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
-}
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.marek = {
     isNormalUser = true;
-    description = "Marek";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
